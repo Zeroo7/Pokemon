@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(90deg,rgb(27, 228, 228),rgb(98, 204, 204),rgb(226, 125, 125),rgb(146, 45, 45));
+    background-repeat:repeat;
+}
+
+.dad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 25%;
+    height: 1.9em;
+    border-radius: 5px;
+    border: 0.25em double orangered;
+    box-shadow: 1px 6px 10px rgba(50, 50, 50, 0.7);
+    margin: 1em 0 2em 0;
+}
+
+input::placeholder {
+    font-family: cursive;
+    font-weight: 550;
+}
+
+input:focus::placeholder {
+    font-size: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    background-color: rgb(19, 201, 95);
+    color: white;
+    flex-basis: 30px;
+    width: 80px;
+    border: 0;
+    border-radius: 40px;
+    box-shadow: 1px 4px 10px rgba(50, 50, 50, 0.7);
+    font-family: cursive;
+    font-size: 15px;
+    transition: ease-in-out 0.2s;
+}
+
+button:hover {
+    background-color: white;
+    color:rgb(18, 240, 110);
+    transform: translateY(2px);
+    position: relative;
+    top: 1px;
+    border: double 2px;
+    cursor: pointer;
+}
+
+button:focus {
+    top: 0;
+    transform: none;
+}
+
+
+.Pokeinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:2.8em;
+}
+
+.pokeTrue {
+    border: solid 0.6em;
+    border-image: linear-gradient(90deg,rgb(226, 125, 125),rgb(98, 204, 204)) 1;
+    border-radius: 10px;
+    padding: 3em 4em 3em 4em;
+}
+
+.pokeFalse {
+    border: solid 0.65em red;
+    border-radius: 15px;
+    padding: 2.9em;
+}
