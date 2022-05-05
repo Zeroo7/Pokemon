@@ -1,6 +1,7 @@
 body {
     background: linear-gradient(90deg,rgb(27, 228, 228),rgb(98, 204, 204),rgb(226, 125, 125),rgb(146, 45, 45));
     background-repeat:repeat;
+    font-family: Manrope, cursive;
 }
 
 .dad {
@@ -8,10 +9,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 input {
-    width: 25%;
+    width: calc(7em + 15%);
     height: 1.9em;
     border-radius: 5px;
     border: 0.25em double orangered;
@@ -54,12 +56,6 @@ button:hover {
     border: double 2px;
     cursor: pointer;
 }
-
-button:focus {
-    top: 0;
-    transform: none;
-}
-
 
 .Pokeinfo {
     display: flex;
